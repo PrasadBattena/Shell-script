@@ -1,3 +1,4 @@
 #!/bin/bash
-echo "please enter your username::"
+echo "please enter your username::" #text entered here will be added to value
 read username
+echo "username entered: $username"
