@@ -1,9 +1,9 @@
 #!/bin/bash
 
-userid=$(id -u)
-if [ $userid -ne 0]
+Userid=$(id -u)
+if [ $Userid -ne 0]
 then 
-   echo "error:: you must have sudo access to execute this script"
+   echo "Error:: you must have sudo access to execute this script"
 
  fi
 
