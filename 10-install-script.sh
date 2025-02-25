@@ -41,3 +41,11 @@ fi
  else   
    echo "Git is already... installed"
  fi   
+
+ #if [ $? -ne 0 ]
+ # then 
+ #     echo "installing git ....failure"
+ #     exit 1
+ #else
+ #    echo instlling git....success"
+ #fi
