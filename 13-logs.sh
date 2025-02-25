@@ -8,7 +8,7 @@ Y="\e[33m"
 LOGS_FOLDER="/var/log/shellscript-logs"
 LOG_FILE=$(echo $0 | cut -d "." -f1 )
 TIMESTAMP=$(date +%y-%m-%d-%h-%m-%s)
-LOG_FILE-NAME="$LOGS_FOLDER/$LOG_FILE-$TIMESTAMP.log"
+LOG_FILE_NAME="$LOGS_FOLDER/$LOG_FILE-$TIMESTAMP.log"
 
 validate(){
 
@@ -27,11 +27,11 @@ then
    exit 1 #other than 0
  fi
 
-dnf list installed mysql &>>$LOG_FILE
+dnf list installed mysql &>>$LOG_FILE_NAME
 
 if [ $? -ne 0 ] 
 then #not installed
-    dnf install mysql -y &>>$LOG_FILE
+    dnf install mysql -y &>>$LOG_FILE_NAME
     validate $? "Installing mysql"
 
     else
@@ -43,7 +43,7 @@ fi
 
  if [ $? -ne 0 ]
  then 
-    dnf install git -y &>>$LOG_FILE
+    dnf install git -y &>>$LOG_FILE_NAME
    validate $? "Installing Git"
 else
    echo -e "Git is already...$Y Installed"
