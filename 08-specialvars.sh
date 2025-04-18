@@ -1,9 +1,9 @@
 #!/bin/bash
-echo "all variables passed: $@"
-echo "number of variables: $#"
+echo "All variables passed: $@"
+echo "Number of variables: $#"
 echo "script name: $0"
 echo "present working directory: $pwd"
-echo "home directory of current user: $home"
+echo "Home directory of current user: $home"
 echo "which user is running this script: $user"
 echo "process id of current script: $$"
 sleep 60 &
