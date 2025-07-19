@@ -1,6 +1,6 @@
 #!/bin/bash
-Person1=ramesh #no space before and after equaal
-Person2=Robert
+Person1=Ramesh #no space before and after equaal
+Person2=Suresh
 
 echo "$Person1:: Hi $Person2"
 echo "$Person2:: Hello $Person1"
